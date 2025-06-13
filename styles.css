@@ -1,0 +1,33 @@
+.narrative{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.narrative {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping when screen is too small */
+    justify-content: center;
+    gap: 50px; /* Spacing between images */
+}
+
+.narrative img {
+    flex: 1 1 9%; /* Allows shrinking, 9% base size (10x9% + gaps) */
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .narrative img {
+        flex: 1 1 30%; /* 3–4 per row on small screens */
+    }
+}
+
+.title{
+    text-align: center
+}
+body{
+    background: bisque;
+}
